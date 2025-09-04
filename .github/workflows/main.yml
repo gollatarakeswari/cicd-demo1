@@ -20,7 +20,7 @@ jobs:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
           IMAGE_NAME: my-image
         run: |
-          docker build -t taragolla/my_image .
+          docker build -t taragolla/my-image .
           docker push $DOCKERHUB_USERNAME/$IMAGE_NAME:latest
 
   test:
